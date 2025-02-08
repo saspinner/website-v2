@@ -1,9 +1,24 @@
 ---
+import '../styles/global.css'
+const pageTitle = "About Me"
 ---
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{pageTitle}</title>
+    </head>
 <body>
-    <h1>About me</h1>
+    <h1>{pageTitle}</h1>
 
     <p>I'm working through Astro's tutorial right now, this site will continue to grow as I learn more!</p>
    
 
 </body>
+</html>
+<style>
+    h1 {
+        color: purple;
+        font-size: 2rem;
+    }
+</style>

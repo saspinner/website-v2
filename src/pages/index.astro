@@ -1,7 +1,9 @@
 ---
-
+import '../styles/global.css'
+const pageTitle = "Hi, I'm Sam"
+const skills = ["React", "Python", "Postgres", "PyTorch", "SciPy"]
+const finished = true
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -11,7 +13,18 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1><a href="/about/">Astro</a> - that's me!</h1>
-		<h1><a href="/blog/">Blog</a></h1>
+		<h1>{pageTitle}</h1>
+		<p>My skills are:</p>
+		<ul>
+			{skills.map(s => <li>{s}</li>)}
+		</ul>
+		{finished && <h2>I am finished with this tutorial</h2>}
 	</body>
 </html>
+<style>
+	h1 {
+		color: green;
+		display: flex;
+		justify-content: center;
+	}
+</style>
