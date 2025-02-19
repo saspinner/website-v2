@@ -6,8 +6,8 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    /* margin: 1rem 4rem; */
+    min-height: 100%;
+    margin: 1rem 4rem;
   }
   
 header {
@@ -20,9 +20,14 @@ h1 {
     font-size: 1.5rem;
   }
 
-  /* nav styles */
-
 .nav-links {
+  display: flex;
+  gap: 5px;
+}
+
+  /* nav styles below, old but 'reactive' */
+
+/* .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
@@ -63,4 +68,4 @@ h1 {
     display: inline-block;
     padding: 15px 20px;
   }
-}
+} */

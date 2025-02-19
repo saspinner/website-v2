@@ -1,6 +1,38 @@
-<div class="nav-links">
+---
+import { isOpen } from "../store";
+---
+<div id="navLinks">
+    <button id="navCloseButton">X</button>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/blog">Blog</a>
     <a href="/todo">Todo</a>
-</div>
+</div> 
+<button id="navButton">test</button>
+<style>
+    .nav-links {
+        style.display: none
+    }
+
+    button {
+        style.display: flex
+    }
+</style>
+<script>
+    import { isOpen } from "../store";
+    document.getElementById('navButton')?.addEventListener('click', () => isOpen.set(true))
+    document.getElementById('navCloseButton')?.addEventListener('click', () => isOpen.set(false))
+
+    isOpen.subscribe(open => {
+        const navLinks = document.getElementById('navLinks')
+        const navButton = document.getElementById('navButton')
+        if (!navLinks || !navButton){
+            return
+        }
+        navLinks.style.display = open ? "block" : "none"
+        navButton.style.display = open ? "none" : "block"
+
+    })
+
+    
+</script>
