@@ -10,6 +10,14 @@ import { isOpen } from "../store";
 </div> 
 <button id="navButton">test</button>
 <style>
+    #navButton {
+        transition: color 200ms;
+    }
+
+    #navButton:hover {
+        color: red;
+    }
+
     #navLinks {
         display: none;
         flex-direction: column;
@@ -17,7 +25,9 @@ import { isOpen } from "../store";
 
     #navCloseButton {
         width: 2rem;
+        transition: display 100ms;
     }
+
 
 </style>
 <script>
