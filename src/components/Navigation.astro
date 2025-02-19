@@ -1,11 +1,15 @@
 ---
 import { isOpen } from "../store";
+const pathName = Astro.url.pathname
+const isIndex = pathName === "/"
 ---
-<div id="navLinks">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/writing">Writing</a>
-    <a href="/todo">Todo</a>
+<div id="navBar">
+    {!isIndex && <a href="/" id="homeLink">Sam Spinner</a>}
+    <div id="navLinks">
+        <a href="/about">About</a>
+        <a href="/writing">Writing</a>
+        <a href="/todo">Todo</a>
+    </div>
 </div> 
 <style>
     #navLinks {
@@ -13,6 +17,21 @@ import { isOpen } from "../store";
         flex-direction: row;
         justify-content: right;
         gap: 1rem;
+        width: 100%;
+    }
+
+    #homeLink {
+        font-weight: 550;
+        width: 100%;
+    }
+
+    #homeLink:hover {
+        text-decoration: none;
+    }
+
+    #navBar {
+        display: flex;
+        justify-content: space-between;
     }
 </style>
 <!-- stashing the below for later -->
