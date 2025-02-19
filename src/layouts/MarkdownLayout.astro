@@ -6,6 +6,7 @@ const pageTitle = frontmatter.title
 <BaseLayout pageTitle={pageTitle} isBlogPost={true}>
     <h1>{pageTitle}</h1>
     <h4>Published: {frontmatter.date}</h4>
+    <hr/>
     <slot />
 </BaseLayout>
 <style>
@@ -16,4 +17,13 @@ const pageTitle = frontmatter.title
         margin: 0;
         font-weight: 300;
     }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+    
 </style>
