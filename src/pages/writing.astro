@@ -14,7 +14,7 @@ type postFrontmatter = {
 }
 // TODO: get type for this post object
 
-const pageTitle = "Blog"
+const pageTitle = "Writing"
 const allPosts = Object.values(import.meta.glob('./posts/*.md', {eager: true}))
 const filteredPosts = allPosts.filter(post => post.frontmatter.live)
 ---
