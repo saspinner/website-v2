@@ -10,13 +10,15 @@ import { isOpen } from "../store";
 </div> 
 <button id="navButton">test</button>
 <style>
-    .nav-links {
-        style.display: none
+    #navLinks {
+        display: none;
+        flex-direction: column;
     }
 
-    button {
-        style.display: flex
+    #navCloseButton {
+        width: 2rem;
     }
+
 </style>
 <script>
     import { isOpen } from "../store";
@@ -29,7 +31,7 @@ import { isOpen } from "../store";
         if (!navLinks || !navButton){
             return
         }
-        navLinks.style.display = open ? "block" : "none"
+        navLinks.style.display = open ? "flex" : "none"
         navButton.style.display = open ? "none" : "block"
 
     })
