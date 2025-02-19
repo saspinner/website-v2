@@ -1,6 +1,4 @@
 ---
-import '../styles/global.css'
-import Header from '../components/Header.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = "Hi, I'm Sam"
 const skills = ["React", "Python", "Postgres", "PyTorch", "SciPy"]
@@ -8,30 +6,14 @@ const finished = true
 
 const secondary = "gray"
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<BaseLayout pageTitle={pageTitle}>
-			<p>My skills are:</p>
-			<ul>
-				{skills.map(s => <li class="skills">{s}</li>)}
-			</ul>
-			{finished && <h2>I am finished with this tutorial</h2>}
-		</BaseLayout>	
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<p>My skills are:</p>
+	<ul>
+		{skills.map(s => <li class="skills">{s}</li>)}
+	</ul>
+	{finished && <h2>I am finished with this tutorial</h2>}
+</BaseLayout>	
 <style define:vars={{secondary}}>
-	h1 {
-		color: green;
-		display: flex;
-		justify-content: center;
-	}
 	.skills {
 		color: var(--secondary);
 		font-weight: bold;
