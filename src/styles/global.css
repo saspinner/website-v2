@@ -4,11 +4,18 @@ html {
   }
   
   body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
+    min-height: 100vh;
+    margin: 2rem 4rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  header {
+    min-height: 50px;
+  }
+
+  footer {
+    min-height: 50px;
   }
   
   * {
@@ -17,7 +24,7 @@ html {
   
   h1 {
     margin: 1rem 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   /* nav styles */
