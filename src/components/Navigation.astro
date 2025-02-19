@@ -2,35 +2,21 @@
 import { isOpen } from "../store";
 ---
 <div id="navLinks">
-    <button id="navCloseButton">X</button>
     <a href="/">Home</a>
     <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+    <a href="/writing">Writing</a>
     <a href="/todo">Todo</a>
 </div> 
-<button id="navButton">test</button>
 <style>
-    #navButton {
-        transition: color 200ms;
-    }
-
-    #navButton:hover {
-        color: red;
-    }
-
     #navLinks {
-        display: none;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 1rem;
     }
-
-    #navCloseButton {
-        width: 2rem;
-        transition: display 100ms;
-    }
-
-
 </style>
-<script>
+<!-- stashing the below for later -->
+<!-- <script>
     import { isOpen } from "../store";
     document.getElementById('navButton')?.addEventListener('click', () => isOpen.set(true))
     document.getElementById('navCloseButton')?.addEventListener('click', () => isOpen.set(false))
@@ -47,4 +33,4 @@ import { isOpen } from "../store";
     })
 
     
-</script>
+</script> -->

@@ -1,14 +1,27 @@
 html {
     background-color: #f1f5f9;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, IBMPlex, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   
 body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    margin: 1rem 4rem;
+    margin: 1.25rem 3rem;
   }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
   
 header {
     min-height: 50px;
@@ -16,8 +29,8 @@ header {
   
   
 h1 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    margin: .75rem 0;
+    font-size: 2.5rem;
   }
 
 .nav-links {

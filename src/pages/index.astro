@@ -1,21 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-const pageTitle = "Hi, I'm Sam"
-const skills = ["React", "Python", "Postgres", "PyTorch", "SciPy"]
+const pageTitle = "Sam Spinner"
 const finished = true
 
 const secondary = "gray"
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<p>My skills are:</p>
-	<ul>
-		{skills.map(s => <li class="skills">{s}</li>)}
-	</ul>
-	{finished && <h2>I am finished with this tutorial</h2>}
 </BaseLayout>	
-<style define:vars={{secondary}}>
-	.skills {
-		color: var(--secondary);
-		font-weight: bold;
-	}
-</style>
