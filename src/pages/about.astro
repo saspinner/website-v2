@@ -1,8 +1,39 @@
 ---
+import { Image } from "astro:assets"
 import BaseLayout from "../layouts/BaseLayout.astro"
 const pageTitle = "About"
+import headshot from "../img/cropped.png"
+const imgWidth = 200
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <p>I'm working through Astro's tutorial right now, this site will continue to grow as I learn more!</p>
+    <div id="aboutSection">
+        <div>
+            <h4>Hey there!</h4>
+            <p>My name's Sam, I'm a software engineer living in San Mateo, crown jewel of the SF Bay Area.</p>
+            <p>I currently work at <a href="https://www.notion.com">Notion</a> and volunteer at a handful of local nonprofits. Before that, I had a brief stint in biotech.</p>
+            <p>Feel free to reach out for any reason- I'd probably love to talk with you!</p>
+        </div>
+        <div>
+            <Image src={headshot} alt="Here is what I look like" width={imgWidth} loading="lazy"/>
+        </div>
+    </div>
 </BaseLayout>
+<style>
+    #aboutSection {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        align-content: space-evenly;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #aboutSection {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-content: space-evenly;
+        }
+
+  }
+</style>
    
