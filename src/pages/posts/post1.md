@@ -1,17 +1,8 @@
 ---
 layout: "../../layouts/MarkdownLayout.astro"
 title: 'How This Website Came To Be'
-date: "2025-02-07" 
+date: "2025-02-020" 
 live: true
 ---
-Welcome to the first test post!
 
-### I write a fair bit of markdown in Obsidian, so I think this should be an easy transfer. 
-
-The styling leaves a bit to be desired, but that's just part of the process!
-- more margin on the right side
-- some sort of unified nav bar 
-- do links work like normal? [testing](http://localhost:4321)
-
-
-What about photos that I want to embed? that's a lingering question, maybe I can use R2 from cloudflare
+The bulk of this site's scaffolding was written during a 9 hour plane ride from Tokyo to SFO. 
