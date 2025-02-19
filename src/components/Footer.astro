@@ -1,16 +1,37 @@
 ---
+const year = new Date().getFullYear()
 ---
 <footer>
-    This site is made with Astro, find the source code here!
+  <div id="links">
+    <a href="mailto:samspinner4@gmail.com">Email</a>
+    <a href="www.linkedin.com/in/samspinner">LinkedIn</a>
+    <a>RSS</a>
+  </div>
+  <div id="copyRight">
+    © {year} Sam Spinner
+  </div>
 </footer>
 
 <style>
   footer {
-
+    margin-top: .5rem;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 15px;
     justify-content: center;
     align-items: center;
+  }
+
+  #copyRight {
+    font-weight: 300;
+    font-size: .75rem;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    font-size: .85rem;
+    margin-bottom: .5rem;
   }
   </style>
