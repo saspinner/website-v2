@@ -12,16 +12,10 @@ const {pageTitle} = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
+  <Header />
   <body>
-    <Header />
-    <div>test</div>
-    <ul>
-      <li>change header, footer, highlight color and style </li> 
-      <li>make nav bar slimmer</li> 
-      <li>figure out why there is so much space after the first div, probably has to do with flex/grid, you should go back to flex</li>
-    </ul>
     <h1>{pageTitle}</h1>
     <slot />
-    <Footer />
   </body>
+  <Footer />
 </html>

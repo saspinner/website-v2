@@ -3,26 +3,19 @@ html {
     font-family: sans-serif;
   }
   
-  body {
+body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 2rem 4rem;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    /* margin: 1rem 4rem; */
   }
-
-  header {
-    min-height: 50px;
-  }
-
-  footer {
+  
+header {
     min-height: 50px;
   }
   
-  * {
-    box-sizing: border-box;
-  }
   
-  h1 {
+h1 {
     margin: 1rem 0;
     font-size: 1.5rem;
   }
