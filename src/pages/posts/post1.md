@@ -1,10 +1,7 @@
 ---
 layout: "../../layouts/MarkdownLayout.astro"
-title: 'First Test Post'
+title: 'How This Website Came To Be'
 date: "2025-02-07" 
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 live: true
 ---
 Welcome to the first test post!
