@@ -12,10 +12,14 @@ type postFrontmatter = {
   image: imageFrontMatter
   live: false
 }
-// TODO: get type for this post object
+
+type Post = {
+  url: string
+  frontmatter : postFrontmatter
+}
 
 const pageTitle = "Writing"
-const allPosts = Object.values(import.meta.glob('./posts/*.md', {eager: true}))
+const allPosts: Array<Post> = Object.values(import.meta.glob('./posts/*.md', {eager: true}))
 const filteredPosts = allPosts.filter(post => post.frontmatter.live)
 ---
 <BaseLayout pageTitle={pageTitle}>
