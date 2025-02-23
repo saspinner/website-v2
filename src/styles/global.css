@@ -19,11 +19,11 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: teal;
 }
 
 a:visited {
-  color: black;
+  color: teal;
 }
 
 a:hover {

@@ -9,7 +9,7 @@ const pageTitle = frontmatter.title
     <hr/>
     <slot />
 </BaseLayout>
-<style>
+<style is:global>
     h1 {
         margin-bottom: .25rem;
     }
@@ -24,6 +24,12 @@ const pageTitle = frontmatter.title
         border-top: 1px solid #ccc;
         margin: 1em 0;
         padding: 0;
+    }
+    a {
+        color: teal;
+    }
+    a:visited {
+        color: teal;
     }
     
 </style>
