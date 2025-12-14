@@ -12,9 +12,9 @@ pull_live_posts() {
 }
 
 
-inotifywait -r -m /home/sam/syncthing/obsidian/blog -e close_write --format "%w%f %e" |
-while read file action; do 
-	echo $file
+inotifywait -r -m /home/sam/syncthing/obsidian/blog -e close_write --format "%w%f%0" |
+while IFS= read -r -d '' file; do 
+	echo "$file"
 	#test_fun 
 	#pull_live_posts
 done
