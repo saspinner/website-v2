@@ -6,6 +6,9 @@ website_template="../../layouts/MarkdownLayout.astro"
 GIT="git --git-dir=/home/sam/projects/website-v2/.git --work-tree=/home/sam/projects/website-v2"
 sleep_time=1
 
+$GIT config --global user.email "samspinner4@gmail.com"
+$GIT config --global user.name "Hibby"
+
 safe_git_add_commit() {
 	git pull
 	git add "$1"
@@ -34,12 +37,14 @@ while IFS= read -r -d '' file; do
 
 	# if it's a new file, add a commit
 	if [ -z "$($GIT ls-files "$website_filepath")" ]; then
+		echo "going to call safe_git_add_commit $website_filepath because no git diff found"
 		safe_git_add_commit "$website_filepath"
 		echo "called safe_git_add_commit $website_filepath because no git diff found"
 		
 	else
 
 		if grep -q '^live: true' "$website_filepath"; then
+			echo "going to push changes made to $website_filepath because live is set to true"
 			safe_git_add_commit "$website_filepath"
 			git push
 			echo "pushed changes made to $website_filepath because live is set to true"
@@ -49,6 +54,7 @@ while IFS= read -r -d '' file; do
 		
 		diff=$($GIT diff "$website_filepath")
 		if echo "$diff" | grep -q '+live: false'; then
+			echo "going to push because $website_filepath had live set to false"
 			safe_git_add_commit "$website_filepath"
 			git push
 			echo "pushed changes because $website_filepath had live set to false"
