@@ -1,6 +1,6 @@
 ---
 title: My convoluted and homegrown blogging setup
-live: false
+live: true
 layout: ../../layouts/MarkdownLayout.astro
 date: 2025-12-17
 ---
@@ -54,4 +54,5 @@ WantedBy=mutil-user.target
 - this line should commit, nope, `fatal: detected dubious ownership`
 - fix the above, cross fingers, more git issues, fix them, it's taking awhile, maybe it didn't pick up these changes
 - needed to add a HOME to the systemd .service file
-- ssh-keyscan wasn't started :), number of 
+- ssh-keyscan wasn't started :), number of things that could be going wrong is slowly but surely decreasing to 0
+- having lots of trouble getting the service to use my correct git username, permissions and linux will be good to get more familiar with as I do more projects on the homelab
