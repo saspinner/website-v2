@@ -1,6 +1,6 @@
 ---
 title: Blocking homepages to reclaim screen time
-live: false
+live: true
 date: 2025-12-30
 layout: ../../layouts/MarkdownLayout.astro
 ---
