@@ -2,7 +2,6 @@
 title: Blocking homepages to reclaim screen time
 live: true
 date: 2025-12-30
-layout: ../../layouts/MarkdownLayout.astro
 ---
 Navigating the tradeoff between the value that technology provides and the attention that it steals is a defining struggle of our time. 
 

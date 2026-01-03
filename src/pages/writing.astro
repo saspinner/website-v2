@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro'
 type imageFrontMatter = {
   url: string
@@ -7,10 +8,8 @@ type imageFrontMatter = {
 
 type postFrontmatter = {
   title: string
-  layout: string
   date: string
-  image: imageFrontMatter
-  live: false
+  live: boolean
 }
 
 type Post = {
@@ -19,11 +18,25 @@ type Post = {
 }
 
 const pageTitle = "Writing"
-const allPosts: Array<Post> = Object.values(import.meta.glob('./posts/*.md', {eager: true}))
-const filteredPosts = allPosts.filter(post => post.frontmatter.live)
+
+const allPosts = await getCollection('blog');
+const filteredPosts = allPosts.filter(post => post.data.live)
+const sortedPosts = filteredPosts.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
 ---
+<style>
+  .spaced-list li {
+    margin-bottom: 0.5em; 
+  }
+
+  .spaced-list li:last-child {
+    margin-bottom: 0;
+  }
+</style>
+
 <BaseLayout pageTitle={pageTitle}>
-  <ul>
-    {filteredPosts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+  <ul class="spaced-list">
+	  {sortedPosts.map(post => <li><a href={`writing/${post.id}`}>{post.data.title}</a><div style="color: gray">{post.data.date.toLocaleDateString()}</div></li>)}
   </ul>
 </BaseLayout>

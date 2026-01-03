@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/MarkdownLayout.astro"
 title: 'How This Website Came To Be'
 date: "2025-02-20" 
 live: true

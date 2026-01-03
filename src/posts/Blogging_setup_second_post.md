@@ -1,7 +1,6 @@
 ---
 title: My convoluted and homegrown blogging setup
 live: true
-layout: ../../layouts/MarkdownLayout.astro
 date: 2025-12-17
 ---
 ### Goal:
