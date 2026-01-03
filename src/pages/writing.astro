@@ -1,21 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro'
-type imageFrontMatter = {
-  url: string
-  alt: string
-}
-
-type postFrontmatter = {
-  title: string
-  date: string
-  live: boolean
-}
-
-type Post = {
-  url: string
-  frontmatter : postFrontmatter
-}
 
 const pageTitle = "Writing"
 
