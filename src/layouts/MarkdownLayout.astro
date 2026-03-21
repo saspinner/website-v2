@@ -5,10 +5,11 @@ const pageTitle = frontmatter.title
 ---
 <BaseLayout pageTitle={pageTitle} isBlogPost={true}>
     <h1>{pageTitle}</h1>
-    <h4>Published: {frontmatter.date}</h4>
-    <hr/>
-    <slot />
+    <div class="prose">
+	    <slot class="prose"/>
+    </div>
 </BaseLayout>
+
 <style is:global>
     h1 {
         margin-bottom: .25rem;
@@ -16,20 +17,17 @@ const pageTitle = frontmatter.title
     h4 {
         margin: 0;
         font-weight: 300;
-    }
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #ccc;
-        margin: 1em 0;
-        padding: 0;
+	color: gray;
     }
     a {
         color: teal;
     }
     a:visited {
         color: teal;
+    }
+    .prose {
+        max-width: 100%; /* Comfortable reading width */
+    	margin: 0 auto;  /* Center the text */
     }
     
 </style>
