@@ -4,20 +4,16 @@ const {frontmatter} = Astro.props
 const pageTitle = frontmatter.title
 ---
 <BaseLayout pageTitle={pageTitle} isBlogPost={true}>
-    <h1>{pageTitle}</h1>
+    <h2>{pageTitle}</h2>
     <div class="prose">
 	    <slot class="prose"/>
     </div>
 </BaseLayout>
 
 <style is:global>
-    h1 {
-        margin-bottom: .25rem;
-    }
-    h4 {
-        margin: 0;
-        font-weight: 300;
-	color: gray;
+    h2 {
+        padding-bottom: 1rem;
+	font-weight: normal;
     }
     a {
         color: teal;
@@ -26,7 +22,7 @@ const pageTitle = frontmatter.title
         color: teal;
     }
     .prose {
-        max-width: 100%; /* Comfortable reading width */
+        max-width: 65ch; /* Comfortable reading width */
     	margin: 0 auto;  /* Center the text */
     }
     
