@@ -1,7 +1,9 @@
 ---
 const year = new Date().getFullYear()
+const pathName = Astro.url.pathname
+const shouldShowFooter = !pathName.includes("artifacts") 
 ---
-<footer>
+{shouldShowFooter && <footer>
   <div id="links">
     <a href="mailto:samspinner4@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/samspinner">LinkedIn</a>
@@ -10,7 +12,7 @@ const year = new Date().getFullYear()
   <div id="copyRight">
     © {year} Sam Spinner
   </div>
-</footer>
+</footer>}
 
 <style>
   a {

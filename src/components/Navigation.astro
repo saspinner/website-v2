@@ -1,6 +1,6 @@
 ---
 const pathName = Astro.url.pathname
-const shouldShowName = (pathName !== "/" && !pathName.includes("/writing") )
+const shouldShowName = (pathName !== "/" && !pathName.includes("/writing") && !pathName.includes("artifacts"))
 ---
 <div id="navBar">
     {shouldShowName && <a href="/" id="homeLink">Sam Spinner</a>}
