@@ -1,29 +1,42 @@
 ---
-import BaseLayout from "./BaseLayout.astro"
-const {frontmatter} = Astro.props
-const pageTitle = frontmatter.title
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+const pageTitle = frontmatter.title;
 ---
+
 <BaseLayout pageTitle={pageTitle} isBlogPost={true}>
-    <h2>{pageTitle}</h2>
-    <div class="prose">
-	    <slot class="prose"/>
-    </div>
+  <h2>{pageTitle}</h2>
+  <div class="prose">
+    <slot class="prose" />
+  </div>
 </BaseLayout>
 
 <style is:global>
-    h2 {
-        padding-bottom: 1rem;
-	font-weight: normal;
-    }
-    a {
-        color: teal;
-    }
-    a:visited {
-        color: teal;
-    }
-    .prose {
-        max-width: 65ch; /* Comfortable reading width */
-    	margin: 0 auto;  /* Center the text */
-    }
-    
+  h2 {
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+  a {
+    color: teal;
+  }
+  a:visited {
+    color: teal;
+  }
+  .prose {
+    max-width: 65ch; /* Comfortable reading width */
+    margin: 0 auto; /* Center the text */
+  }
+
+   .prose blockquote {
+     border-left: 4px solid #ccc;
+     margin: 1.5em 0;
+     padding: 0.5em 1rem;
+     font-style: italic;
+     color: #555;
+     line-height: 1.5rem;
+   }
+
+   .prose blockquote p {
+     margin: 0.8em 0;
+   }
 </style>
