@@ -3,8 +3,6 @@ title: The Wanderer
 type: text
 ---
 
-_Translation by [Craig Williamson](https://www.swarthmore.edu/profile/craig-williamson)_
-
 Often the wanderer walks alone, \
 Waits for mercy, longs for grace, \
 Stirs the ice-cold sea with hands and oars— \
@@ -147,5 +145,4 @@ And where we can still find beyond perishing \
 A permanent place, an eternal home.
 
 
-
-
+_Translation by [Craig Williamson](https://www.swarthmore.edu/profile/craig-williamson), here's his [book](https://www.pennpress.org/9780812248470/the-complete-old-english-poems/)_
