@@ -10,7 +10,7 @@ _Exeter_ book of the late 10th century. It's the account from a languishing warr
 Now you also have the change to encounter both in the same day! I acknowledge that the circmstances appear slightly less magical- but that's for you to decide. I welcome you to read either or both as interested, and we can chat about them below. 
 
 <details> 
-<summary>Spoilers below</summary>
+<summary>Light spoilers ahead</summary>
 
 > Where is the horse gone? \
 > Where the rider? \
