@@ -27,16 +27,20 @@ const pageTitle = frontmatter.title;
     margin: 0 auto; /* Center the text */
   }
 
-   .prose blockquote {
-     border-left: 4px solid #ccc;
-     margin: 1.5em 0;
-     padding: 0.5em 1rem;
-     font-style: italic;
-     color: #555;
-     line-height: 1.5rem;
-   }
+  .prose blockquote {
+    border-left: 4px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 1rem;
+    font-style: italic;
+    color: #555;
+    line-height: 1.5rem;
+  }
 
-   .prose blockquote p {
-     margin: 0.8em 0;
-   }
+  .prose blockquote p {
+    margin: 0.8em 0;
+  }
+
+  details[open] summary {
+    display: none;
+  }
 </style>
