@@ -7,7 +7,7 @@ date: 2026-04-26
 A few months ago, I came across two pieces of writing titled _The Wanderer_ on the same day. The [first](http://www.anglo-saxons.net/hwaet/?do=get&type=text&id=wdr) is an old-english elegy from the
 _Exeter_ book of the late 10th century. It's the account from a languishing warrior who has lost his lord and purpose. The [second](https://en.wikisource.org/wiki/Salt-Water_Poems_and_Ballads_(Masefield,_1916)/The_%22Wanderer%22) was recorded in _Salt-Water Poems and Ballads_, an early 20th century hard-cover, and tells of a nearly-wrecked ship that becomes cursed in the mind of the narrating seaman. Both evoke Christian imagery, but otherwise were written in a world and time that is mostly alien to me. 
 
-Now you also have the change to encounter both in the same day! I concede that the circmstances may land as slightly less magical and a touch more contrived- but the interpretation is in your hands. I welcome you to read either or both as interested, and we can chat about them below. 
+Now you also have the chance to encounter both in the same day! I concede that the circmstances may land as slightly less magical and a touch more contrived- but the interpretation is in your hands. I welcome you to read either or both as interested, and we can chat about them below. 
 
 <details> 
 <summary>Light spoilers ahead</summary>
