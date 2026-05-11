@@ -38,11 +38,9 @@ aesthetic webpage in under five minutes.
 
 More people are turning to the outputs of LLMs as sources of truth. The precariousness of that isn't new-
 the information that LLMs generate is about as accurate as information on the internet, namely [Reddit](https://martech.org/where-do-the-popular-llms-find-their-information/),  was before. But,
-there are some new failure modes that can bite us. For one, it's exceedingly cheap now to generate
-'different' sources of evidence that support each other. More interestingly, homonymns with
-different semantic meaning can influence one another. 
+there are some new failure modes that can bite us.
 
-In a college NLP class we learned about the "Hatahway
+In a college NLP class I learned about the "Hatahway
 Effect", in which positive online reception of actress Anne Hathaway correlated to
 increases in Berkshire Hathaway's stock valuation, because to a sentiment analysis bot
 'Hathaway = good' means 'Hatahway = good' across the board. Ironically, in searching the Hathway effect 
