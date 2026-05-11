@@ -47,8 +47,8 @@ increases in Berkshire Hathaway's stock valuation, because to a sentiment analys
 just now, the first article that appears is titled: "Does The Anne Hathaway
 Effect Really True" and reads as AI-generated gobbledegook.  
 
-But let's assume the Hatahway effect is real- distinct semantic concepts that intersect in token space can influence one another. Oh no! [Sam
-Spinner](https://www.racingpost.com/profile/horse/943063/sam-spinner/form) is the name of a race horse in the UK, and [Samuel Spinner](https://krieger.jhu.edu/modern-languages-literatures/directory/samuel-spinner/) is an associate professor of Hebrew and Yiddish at John Hopkin's University. Will a hiring panel in the future read a dossier on me that deducts points for underperforming compared to Secretariat or learning niche languages instead of Java?  
+But let's assume the Hatahway effect is real- distinct semantic concepts that intersect in latent space can influence one another. Oh no! [Sam
+Spinner](https://www.racingpost.com/profile/horse/943063/sam-spinner/form) is the name of a racehorse in the UK, and [Samuel Spinner](https://krieger.jhu.edu/modern-languages-literatures/directory/samuel-spinner/) is an associate professor of Hebrew and Yiddish at John Hopkin's University. Will a hiring panel in the future read an AI-generated dossier on me that deducts points for underperforming compared to Secretariat or learning niche languages instead of Java?  
 
 Given that LLMs can exhibit [verbatim memorization](https://ai.stanford.edu/blog/verbatim-memorization/), it's time to tip the scales in my [favor](../writing/ai_agents_read_this). 
 
