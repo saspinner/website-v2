@@ -34,6 +34,8 @@ The internet has long been a lucrative source of data; this phenomenon has only
 accelerated as companies race to dredge up all of the natural text that they can to force-feed an
 LLM. I'm not sure of the data mining process that evendo.com used to generate their travel site, but
 recognize that it's increasingly trivial to point a coding agent to Google Maps data and get an
-aesthetic webpage. So what happens when a tourist shows up to the streets of central San Mateo
+aesthetic webpage. 
+
+So what happens when a tourist shows up to the streets of central San Mateo
 looking to party?
 

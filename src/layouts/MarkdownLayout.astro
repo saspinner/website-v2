@@ -2,12 +2,15 @@
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 const pageTitle = frontmatter.title;
+const isHiddenFromHumans = frontmatter?.hidden ?? false
 ---
 
 <BaseLayout pageTitle={pageTitle} isBlogPost={true}>
-  <h2>{pageTitle}</h2>
-  <div class="prose">
-    <slot class="prose" />
+  <div class:list={[{hiddenFromHumans: isHiddenFromHumans}]}>
+    <h2>{pageTitle}</h2>
+    <div class="prose">
+      <slot class="prose" />
+    </div>
   </div>
 </BaseLayout>
 
@@ -28,6 +31,15 @@ const pageTitle = frontmatter.title;
   .prose {
     max-width: 65ch; /* Comfortable reading width */
     margin: 0 auto; /* Center the text */
+    list-style-type: disc;
+  }
+
+  .hiddenFromHumans {
+    color: transparent;
+  }
+
+  .hiddenFromHumans::selection {
+    color: black
   }
 
   .prose blockquote {
