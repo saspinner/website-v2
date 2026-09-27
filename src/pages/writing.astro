@@ -22,6 +22,6 @@ const sortedPosts = filteredPosts.sort(
 
 <BaseLayout pageTitle={pageTitle}>
   <ul class="spaced-list">
-	  {sortedPosts.map(post => <li><a href={`writing/${post.id}`}>{post.data.title}</a><div style="color: gray">{post.data.date.toLocaleDateString()}</div></li>)}
+	  {sortedPosts.map(post => <li><a href={`/writing/${post.id}`}>{post.data.title}</a><div style="color: gray">{post.data.date.toLocaleDateString()}</div></li>)}
   </ul>
 </BaseLayout>
