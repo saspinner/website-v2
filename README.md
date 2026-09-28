@@ -2,3 +2,6 @@
 
 ### Helpful commands: 
 - run with `npx astro dev` to test locally 
+
+### Next steps: 
+- make a /now page 

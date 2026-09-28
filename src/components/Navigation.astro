@@ -35,24 +35,6 @@ const shouldShowName = (pathName !== "/" && !pathName.includes("/writing") && !p
     #navBar {
         display: flex;
         justify-content: space-between;
+	margin-bottom: 3rem;
     }
 </style>
-<!-- stashing the below for later -->
-<!-- <script>
-    import { isOpen } from "../store";
-    document.getElementById('navButton')?.addEventListener('click', () => isOpen.set(true))
-    document.getElementById('navCloseButton')?.addEventListener('click', () => isOpen.set(false))
-
-    isOpen.subscribe(open => {
-        const navLinks = document.getElementById('navLinks')
-        const navButton = document.getElementById('navButton')
-        if (!navLinks || !navButton){
-            return
-        }
-        navLinks.style.display = open ? "flex" : "none"
-        navButton.style.display = open ? "none" : "block"
-
-    })
-
-    
-</script> -->
