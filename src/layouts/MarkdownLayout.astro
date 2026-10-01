@@ -29,7 +29,6 @@ const isHiddenFromHumans = frontmatter?.hidden ?? false
     color: teal;
   }
   .prose {
-    max-width: 65ch; /* Comfortable reading width */
     margin: 0 auto; /* Center the text */
     list-style-type: disc;
   }
@@ -57,5 +56,10 @@ const isHiddenFromHumans = frontmatter?.hidden ?? false
 
   details[open] summary {
     display: none;
+  }
+
+  body {
+	  margin-inline: auto;
+	  max-width: 65ch; /* comfortable reading width */
   }
 </style>
