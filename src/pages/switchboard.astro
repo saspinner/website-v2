@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+const pageTitle = "Switchboard"
+---
+<BaseLayout pageTitle={pageTitle}>
+	<p>
+	Links to things I like.
+	</p>
+
+	<h2>Videos & Channels</h2>
+	<ul>
+		<li><a href="https://www.patreon.com/cjthex/posts/six-shapes-of-117532260">CJ the X:</a> insightful and engaging video essays. One of a kind.</li>
+		<li><a href="https://youtu.be/s2a6lk3dC-k">Joseph Carter the Mink Man:</a> a man from Utah does Pokemon in real life for humane pest control while being the head of a beautiful, multi-lingual family.</li>
+		<li><a href="https://www.youtube.com/watch?v=8w5LZd_UlXg">EJ Fox:</a> hacker, journalist, photographer. Unique visual style and animations. Also has a sweet <a href="https://ejfox.com/">site</a>.</li>
+		<li><a href="https://www.youtube.com/@kirstendirksen">Kirsten Dirksen:</a> interviews with people who thrive in atypical homes.</li>
+		<li><a href="https://www.youtube.com/@CrimePaysButBotanyDoesnt">Crime Pays but Botany Doesn't:</a> everything you could possibly want to know about plants delivered by a Chicago mobster.</li>
+		<li><a href="https://www.youtube.com/@SabbaticalTommy">Sabbatical:</a> travel blogger<sup><a href="#fn-1">1</a></sup> and polyglot by virtue of having actually lived abroad for years. 
+	</ul>
+
+	<h2>Writing</h2>
+	<ul>
+		<li><a href="https://www.experimental-history.com/">Experimental History</a>: essays on psychology, culture, academia. </li>
+		<li><a href="https://thezvi.substack.com/">Don't Worry About the Vase</a>: anthropologically interesting view into what the rationalists are up to. </li>
+	</ul>
+
+	<h2>Tech</h2>
+	<ul>
+		<li><a href="https://brooker.co.za/blog/2025/11/02/thinking-dsql.html">Marc Brooker:</a> database and systems engineer at AWS.</li>
+		<li><a href="https://www.jasonscheirer.com/">Jason Scheirer</a>: witty and wise generalist software engineer. </li>
+	</ul>
+
+	<h2>Communities</h2>
+	<ul>
+		<li><a href="https://www.reddit.com/r/swoleacceptance/comments/2ejahp/a_swolm_from_the_swoly_bible/">r/swoleacceptance:</a> gymgoers invent a mythology around lifting weights. Wheymen.</li>
+		<li><a href="https://www.mindat.org/">Mindat:</a> authoritative database of minerals and mineralology.</li>
+	</ul>
+
+	<footer>
+		<p>Footnotes<p>
+		<ol>
+			<li id="fn-1">
+				"Travel blogger" is sometimes a thin veil over "click-bait passport bro", but from what I've seen this man is genuinely respectful, curious, and able to speak with so many locals.
+			</li>
+
+		</ol>
+	</footer>
+
+</BaseLayout>
+<style>
+	footer {
+		padding-bottom: 3rem; 
+		padding-top: 3rem; 
+	}
+</style>

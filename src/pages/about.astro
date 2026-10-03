@@ -4,20 +4,19 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 const pageTitle = "About"
 import headshot from "../img/cropped.png"
 const imgWidth = 200
+
 ---
 <BaseLayout pageTitle={pageTitle}>
     <div id="aboutSection">
         <div>
-            <h4>Hey there!</h4>
-            <p>My name's Sam, I'm a software engineer living in San Mateo, crown jewel of the SF Bay Area.</p>
-            <p>I currently work at <a href="https://www.notion.com">Notion</a> and volunteer at a handful of local nonprofits<sub> <a href="https://campkaleidoscope.org/">1</a> <a href="https://kara-grief.org/">2</a> <a href="https://www.miltonmarksfamilycamp.org/">3</a></sub>. Before that, I had a brief stint in biotech.</p>
-            <p>Feel free to reach out for any reason- I'd probably love to talk with you!</p>
-        </div>
+		An auto-prebituary. "Just for me", as much as is possible with a public website. I suggest you first visit <a href="/switchboard">/switchboard</a> which is certain to contain media more worth your time. 
         <div>
             <Image src={headshot} alt="Here is what I look like" width={imgWidth} loading="lazy"/>
+		Here is what I look like:
         </div>
     </div>
 </BaseLayout>
+
 <style>
     #aboutSection {
         display: flex;
